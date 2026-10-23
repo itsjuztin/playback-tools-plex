@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PlexFlow</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="brand">
+        <span class="brand-title">Playback Tools for Plex</span>
+        <span class="brand-sub">Automation & Controls</span>
+      </div>
+    </header>
+
+    <!-- Automation Section -->
+    <div class="control-box">
+      <div class="box-title">Automation</div>
+      <div class="toggle-list">
+        <label class="toggle-row">
+          <span class="toggle-title">Skip intros automatically</span>
+          <input type="checkbox" id="skipIntro" class="toggle-switch" checked>
+        </label>
+
+        <label class="toggle-row">
+          <span class="toggle-title">Skip credits automatically</span>
+          <input type="checkbox" id="skipCredits" class="toggle-switch" checked>
+        </label>
+
+        <label class="toggle-row">
+          <span class="toggle-title">Skip next episode countdown</span>
+          <input type="checkbox" id="bypassCountdown" class="toggle-switch" checked>
+        </label>
+      </div>
+    </div>
+
+    <!-- Player Controls Section -->
+    <div class="control-box">
+      <div class="box-title">Player features</div>
+      <div class="toggle-list">
+        <label class="toggle-row">
+          <span class="toggle-title">Picture-in-Picture button</span>
+          <input type="checkbox" id="enablePiP" class="toggle-switch" checked>
+        </label>
+
+        <label class="toggle-row">
+          <span class="toggle-title">Playback speed hotkeys</span>
+          <input type="checkbox" id="enableSpeedHotkeys" class="toggle-switch" checked>
+        </label>
+      </div>
+
+      <div class="hotkey-guide">
+        <div class="hotkey-pill"><kbd>[</kbd> -0.1x</div>
+        <div class="hotkey-pill"><kbd>]</kbd> +0.1x</div>
+        <div class="hotkey-pill"><kbd>\</kbd> 1.0x Reset</div>
+      </div>
+    </div>
+
+    <!-- Footer Feedback Link -->
+    <footer class="app-footer-row">
+      <a href="https://github.com/itsjuztin/playback-tools-plex/issues" target="_blank" class="footer-link">Report an issue / feedback</a>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

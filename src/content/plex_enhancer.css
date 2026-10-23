@@ -1,0 +1,47 @@
+/* PlexFlow Content Styles */
+
+#plexflow-hud {
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  background: rgba(17, 24, 39, 0.88);
+  border: 1px solid rgba(234, 158, 20, 0.5);
+  color: #fbbf24;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+  z-index: 999999;
+  opacity: 0;
+  transform: translateY(-6px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+#plexflow-hud.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.plexflow-pip-btn {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.8);
+  width: 34px;
+  height: 34px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  margin: 0 4px;
+  flex-shrink: 0;
+}
+
+.plexflow-pip-btn:hover {
+  color: #fbbf24;
+  background: rgba(255, 255, 255, 0.08);
+}
